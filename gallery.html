@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | AquaZen SUP Yoga & Fitness</title>
+  <link rel="icon" type="image/png" href="../images/logo.png" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/gallery.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="topbar">
+    <span><i class="fas fa-phone"></i> +1 (800) SUP-YOGA</span>
+    <span><i class="fas fa-envelope"></i> hello@aquazen.com</span>
+    <span><i class="fas fa-map-marker-alt"></i> Pacific Coast, CA</span>
+  </div>
+
+  <header class="navbar" id="navbar">
+    <div class="nav-brand">
+      <a href="index.html"><img src="../images/logo.png" alt="logo" class="nav-logo-big" /></a>
+    </div>
+
+    <nav class="nav-links" id="navLinks">
+     <li class="dropdown">
+    <a href="#">Home ▾</a>
+    <ul class="dropdown-menu">
+        <li><a href="index.html">Home 1</a></li>
+        <li><a href="home-2.html">Home 2</a></li>
+    </ul>
+</li> <a href="about.html">About</a>
+      <a href="classes.html">Classes</a>
+      <a href="rental.html">Rentals</a>
+      <a href="retreats.html">Retreats</a>
+      <a href="booking.html">Booking</a>
+      <a href="gallery.html" class="active">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="toggle-btn" id="rtlToggle" title="Toggle RTL/LTR"><i class="fas fa-exchange-alt"></i> RTL</button>
+      <button class="toggle-btn" id="darkToggle" title="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
+      <a href="login.html" class="btn-login"><i class="fas fa-user"></i> Login</a>
+      <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+    </div>
+  </header>
+
+  <!-- ① HERO — full screen with text reveal -->
+  <section class="gl-hero">
+    <div class="gl-hero-bg"></div>
+    <div class="gl-hero-overlay"></div>
+    <div class="gl-hero-content">
+      <div class="gl-hero-line"></div>
+      <p class="gl-hero-tag">On The Water</p>
+      <h1>Our <span>Gallery</span></h1>
+      <p>Every image tells a story of balance, freedom, and the ocean. Explore life at AquaZen.</p>
+      <div class="gl-hero-stats">
+        <div><strong id="photoCount">0</strong><span>Photos</span></div>
+        <div><strong>6</strong><span>Categories</span></div>
+        <div><strong>3</strong><span>Instructors</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ② FILTER TABS -->
+  <section class="gl-filter-bar">
+    <div class="gl-filter-inner">
+      <button class="gl-filter active" data-cat="all"><i class="fas fa-border-all"></i> All</button>
+      <button class="gl-filter" data-cat="yoga"><i class="fas fa-spa"></i> Yoga</button>
+      <button class="gl-filter" data-cat="fitness"><i class="fas fa-dumbbell"></i> Fitness</button>
+      <button class="gl-filter" data-cat="sunset"><i class="fas fa-sun"></i> Sunset</button>
+      <button class="gl-filter" data-cat="water"><i class="fas fa-water"></i> Water</button>
+      <button class="gl-filter" data-cat="group"><i class="fas fa-users"></i> Group</button>
+      <button class="gl-filter" data-cat="board"><i class="fas fa-person-swimming"></i> Boards</button>
+    </div>
+    <div class="gl-count-badge"><span id="visibleCount">18</span> photos</div>
+  </section>
+
+  <!-- ③ MASONRY GALLERY GRID -->
+  <section class="gl-masonry-section">
+    <div class="gl-masonry" id="glMasonry">
+
+      <div class="gl-item gl-tall" data-cat="yoga">
+        <img src="../images/meditation.webp" alt="SUP Yoga" loading="lazy" />
+        <div class="gl-item-overlay">
+          <div class="gl-item-info"><h4>Morning Yoga</h4><p>Sunrise session on calm water</p></div>
+          <button class="gl-zoom" data-src="../images/meditation.webp" data-title="Morning Yoga" data-desc="Sunrise session on calm water"><i class="fas fa-expand"></i></button>
+        </div>
+      </div>
+
+      <div class="gl-item" data-cat="water">
+        <img src="../images/sea.webp" alt="Ocean" loading="lazy" />
+        <div class="gl-item-overlay">
+          <div class="gl-item-info"><h4>Pacific Coast</h4><p>Crystal clear waters at dawn</p></div>
+          <button class="gl-zoom" data-src="../images/sea.webp" data-title="Pacific Coast" data-desc="Crystal clear waters at dawn"><i class="fas fa-expand"></i></button>
+        </div>
+      </div>
+
+      <div class="gl-item" data-cat="sunset">
+        <img src="../images/sunset.avif" alt="Sunset" loading="lazy" />
+        <div class="gl-item-overlay">
+          <div class="gl-item-info"><h4>Golden Hour</h4><p>Sunset meditation session</p></div>
+          <button class="gl-zoom" data-src="../images/sunset.avif" data-title="Golden Hour" data-desc="Sunset meditation session"><i class="fas fa-expand"></i></button>
+        </div>
+      </div>
+
+      <div class="gl-item gl-wide" data-cat="group">
+        <img src="../images/grp.jpg" alt="Group Class" loading="lazy" />
+        <div class="gl-item-overlay">
+          <div class="gl-item-info"><h4>Group Flow</h4><p>Community SUP yoga class</p></div>
+          <button class="gl-zoom" data-src="../images/grp.jpg" data-title="Group Flow" data-desc="Community SUP yoga class"><i class="fas fa-expand"></i></button>
+        </div>
+      </div>
+
+      <div class="gl-item" data-cat="fitness">
+        <img src="../images/jump.jpg" alt="Fitness" loading="lazy" />
+        <div class="gl-item-overlay">
+          <div class="gl-item-info"><h4>Board Jump</h4><p>High-energy fitness session</p></div>
+          <button class="gl-zoom" data-src="../images/jump.jpg" data-title="Board Jump" data-desc="High-energy fitness session"><i class="fas fa-expand"></i></button>
+        </div>
+      </div>
+
+      <div class="gl-item gl-tall" data-cat="yoga">
+        <img src="../images/yoga.avif" alt="Yoga Pose" loading="lazy" />
+        <div class="gl-item-overlay">
+          <div class="gl-item-info"><h4>Balance Pose</h4><p>Advanced balance on open water</p></div>
+          <button class="gl-zoom" data-src="../images/yoga.avif" data-title="Balance Pose" data-desc="Advanced balance on open water"><i class="fas fa-expand"></i></button>
+        </div>
+      </div>
+
+      <div class="gl-item" data-cat="board">
+        <img src="../images/two.webp" alt="SUP Board" loading="lazy" />
+        <div class="gl-item-overlay">
+          <div class="gl-item-info"><h4>Premium Board</h4><p>Our fitness SUP collection</p></div>
+          <button class="gl-zoom" data-src="../images/two.webp" data-title="Premium Board" data-desc="Our fitness SUP collection"><i class="fas fa-expand"></i></button>
+        </div>
+      </div>
+
+      <div class="gl-item" data-cat="group">
+        <img src="../images/grp-2.jpg" alt="Instructor" loading="lazy" />
+        <div class="gl-item-overlay">
+          <div class="gl-item-info"><h4>Kai in Action</h4><p>HIIT session with Kai Nakamura</p></div>
+          <button class="gl-zoom" data-src="../images/grp-2.jpg" data-title="Kai in Action" data-desc="HIIT session with Kai Nakamura"><i class="fas fa-expand"></i></button>
+        </div>
+      </div>
+
+      <div class="gl-item gl-wide" data-cat="sunset">
+        <img src="../images/Sunset-Small.jpg" alt="Sunset Paddle" loading="lazy" />
+        <div class="gl-item-overlay">
+          <div class="gl-item-info"><h4>Sunset Paddle</h4><p>Evening paddle along the coast</p></div>
+          <button class="gl-zoom" data-src="../images/Sunset-Small.jpg" data-title="Sunset Paddle" data-desc="Evening paddle along the coast"><i class="fas fa-expand"></i></button>
+        </div>
+      </div>
+
+      <div class="gl-item" data-cat="yoga">
+        <img src="../images/girls.jpg" alt="Maya Rivers" loading="lazy" />
+        <div class="gl-item-overlay">
+          <div class="gl-item-info"><h4>Maya Rivers</h4><p>RYT-500 SUP Specialist</p></div>
+          <button class="gl-zoom" data-src="../images/girls.jpg" data-title="Maya Rivers" data-desc="RYT-500 SUP Specialist"><i class="fas fa-expand"></i></button>
+        </div>
+      </div>
+
+      <div class="gl-item" data-cat="water">
+        <img src="../images/down.jpg" alt="Water View" loading="lazy" />
+        <div class="gl-item-overlay">
+          <div class="gl-item-info"><h4>Looking Down</h4><p>Clear water beneath the board</p></div>
+          <button class="gl-zoom" data-src="../images/down.jpg" data-title="Looking Down" data-desc="Clear water beneath the board"><i class="fas fa-expand"></i></button>
+        </div>
+      </div>
+
+      <div class="gl-item gl-tall" data-cat="group">
+        <img src="../images/group.avif" alt="Group" loading="lazy" />
+        <div class="gl-item-overlay">
+          <div class="gl-item-info"><h4>Family Session</h4><p>Fun for all ages on the water</p></div>
+          <button class="gl-zoom" data-src="../images/group.avif" data-title="Family Session" data-desc="Fun for all ages on the water"><i class="fas fa-expand"></i></button>
+        </div>
+      </div>
+
+      <div class="gl-item" data-cat="board">
+        <img src="../images/Board.jpg" alt="Yoga Board" loading="lazy" />
+        <div class="gl-item-overlay">
+          <div class="gl-item-info"><h4>Yoga SUP</h4><p>Wide stable yoga board</p></div>
+          <button class="gl-zoom" data-src="../images/Board.jpg" data-title="Yoga SUP" data-desc="Wide stable yoga board"><i class="fas fa-expand"></i></button>
+        </div>
+      </div>
+
+      <div class="gl-item" data-cat="fitness">
+        <img src="../images/four.jpg" alt="Fitness" loading="lazy" />
+        <div class="gl-item-overlay">
+          <div class="gl-item-info"><h4>Core Training</h4><p>Full body workout on water</p></div>
+          <button class="gl-zoom" data-src="../images/four.jpg" data-title="Core Training" data-desc="Full body workout on water"><i class="fas fa-expand"></i></button>
+        </div>
+      </div>
+
+      <div class="gl-item gl-wide" data-cat="yoga">
+        <img src="../images/ban.png" alt="SUP Yoga Banner" loading="lazy" />
+        <div class="gl-item-overlay">
+          <div class="gl-item-info"><h4>AquaZen Life</h4><p>Where yoga meets the ocean</p></div>
+          <button class="gl-zoom" data-src="../images/ban.png" data-title="AquaZen Life" data-desc="Where yoga meets the ocean"><i class="fas fa-expand"></i></button>
+        </div>
+      </div>
+
+      <div class="gl-item" data-cat="water">
+        <img src="../images/sky.jpg" alt="Sky" loading="lazy" />
+        <div class="gl-item-overlay">
+          <div class="gl-item-info"><h4>Open Sky</h4><p>Paddling under clear blue skies</p></div>
+          <button class="gl-zoom" data-src="../images/sky.jpg" data-title="Open Sky" data-desc="Paddling under clear blue skies"><i class="fas fa-expand"></i></button>
+        </div>
+      </div>
+
+      <div class="gl-item" data-cat="group">
+        <img src="../images/grp-3.jpg" alt="Sofia Marin" loading="lazy" />
+        <div class="gl-item-overlay">
+          <div class="gl-item-info"><h4>Sofia Marin</h4><p>Meditation guide at work</p></div>
+          <button class="gl-zoom" data-src="../images/grp-3.jpg" data-title="Sofia Marin" data-desc="Meditation guide at work"><i class="fas fa-expand"></i></button>
+        </div>
+      </div>
+
+      <div class="gl-item" data-cat="board">
+        <img src="../images/red.webp" alt="Inflatable Board" loading="lazy" />
+        <div class="gl-item-overlay">
+          <div class="gl-item-info"><h4>Inflatable SUP</h4><p>Portable beginner board</p></div>
+          <button class="gl-zoom" data-src="../images/red.webp" data-title="Inflatable SUP" data-desc="Portable beginner board"><i class="fas fa-expand"></i></button>
+        </div>
+      </div>
+
+    </div>
+    <div class="gl-no-results" id="glNoResults" style="display:none;">
+      <i class="fas fa-image"></i>
+      <p>No photos in this category yet.</p>
+    </div>
+  </section>
+
+  <!-- ④ LIGHTBOX -->
+  <div class="gl-lightbox" id="glLightbox">
+    <div class="gl-lb-overlay" id="glLbOverlay"></div>
+    <div class="gl-lb-box">
+      <button class="gl-lb-close" id="glLbClose"><i class="fas fa-times"></i></button>
+      <button class="gl-lb-prev" id="glLbPrev"><i class="fas fa-chevron-left"></i></button>
+      <button class="gl-lb-next" id="glLbNext"><i class="fas fa-chevron-right"></i></button>
+      <div class="gl-lb-img-wrap">
+        <img src="" alt="" id="glLbImg" />
+        <div class="gl-lb-loader"><i class="fas fa-circle-notch fa-spin"></i></div>
+      </div>
+      <div class="gl-lb-caption">
+        <h4 id="glLbTitle"></h4>
+        <p id="glLbDesc"></p>
+        <span id="glLbCounter"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ⑤ PARALLAX QUOTE -->
+  <section class="gl-parallax">
+    <div class="gl-parallax-overlay"></div>
+    <div class="gl-parallax-content">
+      <i class="fas fa-camera gl-parallax-icon"></i>
+      <blockquote>"Every wave is a new beginning.<br/>Every pose is a new story."</blockquote>
+      <cite>— AquaZen Community</cite>
+    </div>
+  </section>
+
+  <!-- ⑥ VIDEO SECTION -->
+  <section class="gl-video-section section-pad bg-light">
+    <div class="section-header">
+      <p class="section-tag">See It Live</p>
+      <h2>Watch Us in Action</h2>
+    </div>
+    <div class="gl-video-grid">
+      <div class="gl-video-card gl-reveal">
+        <div class="gl-video-thumb">
+          <img src="../images/grp.jpg" alt="SUP Yoga Class" />
+          <div class="gl-video-play"><i class="fas fa-play"></i></div>
+          <div class="gl-video-duration">2:34</div>
+        </div>
+        <div class="gl-video-info">
+          <h4>Morning SUP Yoga Flow</h4>
+          <p>Watch a full beginner class with Maya Rivers on the Pacific Coast.</p>
+        </div>
+      </div>
+      <div class="gl-video-card gl-reveal">
+        <div class="gl-video-thumb">
+          <img src="../images/two.webp" alt="Fitness Session" />
+          <div class="gl-video-play"><i class="fas fa-play"></i></div>
+          <div class="gl-video-duration">3:12</div>
+        </div>
+        <div class="gl-video-info">
+          <h4>Power Paddle HIIT</h4>
+          <p>High-intensity board workout with Kai Nakamura — feel the burn!</p>
+        </div>
+      </div>
+      <div class="gl-video-card gl-reveal">
+        <div class="gl-video-thumb">
+          <img src="../images/sunset.avif" alt="Sunset Session" />
+          <div class="gl-video-play"><i class="fas fa-play"></i></div>
+          <div class="gl-video-duration">4:05</div>
+        </div>
+        <div class="gl-video-info">
+          <h4>Sunset Meditation</h4>
+          <p>A deeply calming restorative session as the sun sets over the water.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ⑦ INSTAGRAM STRIP -->
+  <section class="gl-insta-section section-pad">
+    <div class="section-header">
+      <p class="section-tag">Follow Along</p>
+      <h2>@aquazen_sup</h2>
+    </div>
+    <div class="gl-insta-grid">
+      <div class="gl-insta-item gl-reveal"><img src="../images/meditation.webp" alt="" /><div class="gl-insta-hover"><i class="fab fa-instagram"></i></div></div>
+      <div class="gl-insta-item gl-reveal"><img src="../images/sea.webp" alt="" /><div class="gl-insta-hover"><i class="fab fa-instagram"></i></div></div>
+      <div class="gl-insta-item gl-reveal"><img src="../images/grp.jpg" alt="" /><div class="gl-insta-hover"><i class="fab fa-instagram"></i></div></div>
+      <div class="gl-insta-item gl-reveal"><img src="../images/jump.jpg" alt="" /><div class="gl-insta-hover"><i class="fab fa-instagram"></i></div></div>
+      <div class="gl-insta-item gl-reveal"><img src="../images/yoga.avif" alt="" /><div class="gl-insta-hover"><i class="fab fa-instagram"></i></div></div>
+      <div class="gl-insta-item gl-reveal"><img src="../images/sunset.avif" alt="" /><div class="gl-insta-hover"><i class="fab fa-instagram"></i></div></div>
+    </div>
+    <div class="center-btn"><a href="#" class="btn-outline"><i class="fab fa-instagram"></i> Follow on Instagram</a></div>
+  </section>
+
+  <section class="newsletter">
+    <div class="newsletter-content">
+      <h2>Stay in the Flow</h2>
+      <p>Get gallery updates, class news, and wellness tips delivered to your inbox.</p>
+      <form class="newsletter-form" onsubmit="return false;">
+        <input type="email" placeholder="Enter your email address" />
+        <button type="submit" class="btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html"><img src="../images/logo.png" alt="AquaZen Logo" class="footer-logo" /></a>
+        <p>Connecting mind, body, and water through the art of SUP yoga and fitness.</p>
+        <div class="footer-social">
+          <a href="#" class="ig"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="fb"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="yt"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="tt"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="classes.html">Classes</a>
+        <a href="rental.html">Rentals</a>
+        <a href="retreats.html">Retreats</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="booking.html">Booking</a>
+      </div>
+      <div class="footer-links">
+        <h4>Company</h4>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><i class="fas fa-map-marker-alt"></i> 123 Ocean Drive, Pacific Coast, CA</p>
+        <p><i class="fas fa-phone"></i> +1 (800) SUP-YOGA</p>
+        <p><i class="fas fa-envelope"></i> hello@aquazen.com</p>
+        <p><i class="fas fa-clock"></i> Mon–Sun: 6AM – 8PM</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 AquaZen SUP Yoga & Fitness. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+  <script src="../js/gallery.js"></script>
+</body>
+</html>
