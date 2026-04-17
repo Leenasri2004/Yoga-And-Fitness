@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Classes | AquaZen SUP Yoga & Fitness</title>
+  <link rel="icon" type="image/png" href="../images/logo.png" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/classes.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <span><i class="fas fa-phone"></i> +1 (800) SUP-YOGA</span>
+    <span><i class="fas fa-envelope"></i> hello@aquazen.com</span>
+    <span><i class="fas fa-map-marker-alt"></i> Pacific Coast, CA</span>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="nav-brand">
+      <a href="index.html"><img src="../images/logo.png" alt="logo" class="nav-logo-big" /></a>
+    </div>
+
+    <nav class="nav-links" id="navLinks">
+     <li class="dropdown">
+    <a href="#">Home ▾</a>
+    <ul class="dropdown-menu">
+        <li><a href="index.html">Home 1</a></li>
+        <li><a href="home-2.html">Home 2</a></li>
+    </ul>
+</li> <a href="about.html">About</a>
+      <a href="classes.html" class="active">Classes</a>
+      <a href="rental.html">Rentals</a>
+      <a href="retreats.html">Retreats</a>
+      <a href="booking.html">Booking</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="toggle-btn" id="rtlToggle" title="Toggle RTL/LTR"><i class="fas fa-exchange-alt"></i> RTL</button>
+      <button class="toggle-btn" id="darkToggle" title="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
+      <a href="login.html" class="btn-login"><i class="fas fa-user"></i> Login</a>
+      <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero classes-hero">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <p class="hero-tag">Move. Breathe. Flow.</p>
+      <h1>Our <span>Classes</span></h1>
+      <p class="hero-sub">From beginner-friendly flows to advanced fitness challenges — find the perfect class for your journey on the water.</p>
+      <div class="hero-btns">
+        <a href="#all-classes" class="btn-primary">Browse Classes</a>
+        <a href="schedule.html" class="btn-outline hero-outline-btn">View Schedule</a>
+      </div>
+    </div>
+    <div class="hero-scroll"><i class="fas fa-chevron-down"></i></div>
+  </section>
+
+  <!-- CLASSES STATS BAR -->
+  <section class="classes-stats">
+    <div class="cstat"><i class="fas fa-water"></i><div><strong>8</strong><span>Class Types</span></div></div>
+    <div class="cstat"><i class="fas fa-users"></i><div><strong>Max 10</strong><span>Per Session</span></div></div>
+    <div class="cstat"><i class="fas fa-certificate"></i><div><strong>RYT-500</strong><span>Certified Instructors</span></div></div>
+    <div class="cstat"><i class="fas fa-calendar-check"></i><div><strong>50+</strong><span>Sessions / Month</span></div></div>
+  </section>
+
+  <!-- FILTER + ALL CLASSES -->
+  <section class="all-classes-section section-pad" id="all-classes">
+    <div class="section-header">
+      <p class="section-tag">What We Offer</p>
+      <h2>All Classes</h2>
+    </div>
+
+    <!-- FILTER TABS -->
+    <div class="filter-tabs">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="beginner">Beginner</button>
+      <button class="filter-btn" data-filter="intermediate">Intermediate</button>
+      <button class="filter-btn" data-filter="advanced">Advanced</button>
+      <button class="filter-btn" data-filter="family">Family</button>
+    </div>
+
+    <!-- CLASSES GRID -->
+    <div class="classes-grid" id="classesGrid">
+
+      <!-- Card 1 -->
+      <div class="class-card" data-level="beginner">
+        <div class="class-img-wrap">
+          <img src="../images/img-1.jpg" alt="SUP Yoga Flow" />
+          <span class="class-level beginner">Beginner</span>
+          <div class="class-overlay"><a href="schedule.html" class="btn-primary">Book Now</a></div>
+        </div>
+        <div class="class-body">
+          <h3>SUP Yoga Flow</h3>
+          <p>Gentle vinyasa sequences on calm water. Build balance, flexibility, and inner peace — perfect for first-timers.</p>
+          <div class="class-details">
+            <span><i class="fas fa-clock"></i> 60 min</span>
+            <span><i class="fas fa-dollar-sign"></i> $45</span>
+            <span><i class="fas fa-user"></i> Maya Rivers</span>
+          </div>
+          <div class="class-footer">
+            <div class="spots"><i class="fas fa-circle-dot"></i> 4 spots left</div>
+            <a href="schedule.html" class="btn-sm">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="class-card" data-level="intermediate">
+        <div class="class-img-wrap">
+          <img src="../images/img-2.jpg" alt="SUP Core Fitness" />
+          <span class="class-level intermediate">Intermediate</span>
+          <div class="class-overlay"><a href="schedule.html" class="btn-primary">Book Now</a></div>
+        </div>
+        <div class="class-body">
+          <h3>SUP Core Fitness</h3>
+          <p>High-intensity board workout targeting core strength, stability, and endurance on open water.</p>
+          <div class="class-details">
+            <span><i class="fas fa-clock"></i> 75 min</span>
+            <span><i class="fas fa-dollar-sign"></i> $55</span>
+            <span><i class="fas fa-user"></i> Kai Nakamura</span>
+          </div>
+          <div class="class-footer">
+            <div class="spots"><i class="fas fa-circle-dot"></i> 6 spots left</div>
+            <a href="schedule.html" class="btn-sm">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="class-card" data-level="advanced">
+        <div class="class-img-wrap">
+          <img src="../images/img-4.jpg" alt="Sunset Meditation" />
+          <span class="class-level advanced">Advanced</span>
+          <div class="class-overlay"><a href="schedule.html" class="btn-primary">Book Now</a></div>
+        </div>
+        <div class="class-body">
+          <h3>Sunset Meditation</h3>
+          <p>Guided meditation and restorative yoga as the sun sets over the water. A deeply calming experience.</p>
+          <div class="class-details">
+            <span><i class="fas fa-clock"></i> 90 min</span>
+            <span><i class="fas fa-dollar-sign"></i> $65</span>
+            <span><i class="fas fa-user"></i> Sofia Marin</span>
+          </div>
+          <div class="class-footer">
+            <div class="spots"><i class="fas fa-circle-dot"></i> 3 spots left</div>
+            <a href="schedule.html" class="btn-sm">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="class-card" data-level="beginner">
+        <div class="class-img-wrap">
+          <img src="../images/img-5.jpg" alt="Morning Mindfulness" />
+          <span class="class-level beginner">Beginner</span>
+          <div class="class-overlay"><a href="schedule.html" class="btn-primary">Book Now</a></div>
+        </div>
+        <div class="class-body">
+          <h3>Morning Mindfulness</h3>
+          <p>Start your day with a peaceful sunrise paddle and guided breathing exercises on the water and sea.</p>
+          <div class="class-details">
+            <span><i class="fas fa-clock"></i> 45 min</span>
+            <span><i class="fas fa-dollar-sign"></i> $35</span>
+            <span><i class="fas fa-user"></i> Sofia Marin</span>
+          </div>
+          <div class="class-footer">
+            <div class="spots"><i class="fas fa-circle-dot"></i> 8 spots left</div>
+            <a href="schedule.html" class="btn-sm">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="class-card" data-level="intermediate">
+        <div class="class-img-wrap">
+          <img src="../images/img-6.jpg" alt="Power Paddle" />
+          <span class="class-level intermediate">Intermediate</span>
+          <div class="class-overlay"><a href="schedule.html" class="btn-primary">Book Now</a></div>
+        </div>
+        <div class="class-body">
+          <h3>Power Paddle HIIT</h3>
+          <p>Combine paddling sprints with bodyweight exercises for a full-body burn on the open water.</p>
+          <div class="class-details">
+            <span><i class="fas fa-clock"></i> 60 min</span>
+            <span><i class="fas fa-dollar-sign"></i> $55</span>
+            <span><i class="fas fa-user"></i> Kai Nakamura</span>
+          </div>
+          <div class="class-footer">
+            <div class="spots spots-low"><i class="fas fa-circle-dot"></i> 2 spots left</div>
+            <a href="schedule.html" class="btn-sm">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="class-card" data-level="advanced">
+        <div class="class-img-wrap">
+          <img src="../images/img-7.jpg" alt="Advanced Balance" />
+          <span class="class-level advanced">Advanced</span>
+          <div class="class-overlay"><a href="schedule.html" class="btn-primary">Book Now</a></div>
+        </div>
+        <div class="class-body">
+          <h3>Advanced Balance Flow</h3>
+          <p>Challenge your limits with inversions, arm balances, and deep stretches on an unstable board.</p>
+          <div class="class-details">
+            <span><i class="fas fa-clock"></i> 90 min</span>
+            <span><i class="fas fa-dollar-sign"></i> $70</span>
+            <span><i class="fas fa-user"></i> Maya Rivers</span>
+          </div>
+          <div class="class-footer">
+            <div class="spots"><i class="fas fa-circle-dot"></i> 5 spots left</div>
+            <a href="schedule.html" class="btn-sm">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="class-card" data-level="family">
+        <div class="class-img-wrap">
+          <img src="../images/group.avif" alt="Family SUP Fun" />
+          <span class="class-level family">Family</span>
+          <div class="class-overlay"><a href="schedule.html" class="btn-primary">Book Now</a></div>
+        </div>
+        <div class="class-body">
+          <h3>Family SUP Fun</h3>
+          <p>A fun-filled session for the whole family. Kids and adults paddle together with games and light yoga.</p>
+          <div class="class-details">
+            <span><i class="fas fa-clock"></i> 60 min</span>
+            <span><i class="fas fa-dollar-sign"></i> $40</span>
+            <span><i class="fas fa-user"></i> Kai Nakamura</span>
+          </div>
+          <div class="class-footer">
+            <div class="spots spots-full"><i class="fas fa-circle-dot"></i> Full</div>
+            <a href="schedule.html" class="btn-sm btn-full">Waitlist</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="class-card" data-level="beginner">
+        <div class="class-img-wrap">
+          <img src="../images/img-9.jpg" alt="Intro to SUP" />
+          <span class="class-level beginner">Beginner</span>
+          <div class="class-overlay"><a href="schedule.html" class="btn-primary">Book Now</a></div>
+        </div>
+        <div class="class-body">
+          <h3>Intro to SUP</h3>
+          <p>Never been on a paddleboard? This class covers the basics — standing, paddling, and falling safely.</p>
+          <div class="class-details">
+            <span><i class="fas fa-clock"></i> 60 min</span>
+            <span><i class="fas fa-dollar-sign"></i> $40</span>
+            <span><i class="fas fa-user"></i> Maya Rivers</span>
+          </div>
+          <div class="class-footer">
+            <div class="spots"><i class="fas fa-circle-dot"></i> 7 spots left</div>
+            <a href="schedule.html" class="btn-sm">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 9 -->
+      <div class="class-card" data-level="intermediate">
+        <div class="class-img-wrap">
+          <img src="../images/grp-3.jpg" alt="Yin SUP Yoga" />
+          <span class="class-level intermediate">Intermediate</span>
+          <div class="class-overlay"><a href="schedule.html" class="btn-primary">Book Now</a></div>
+        </div>
+        <div class="class-body">
+          <h3>Yin SUP Yoga</h3>
+          <p>Slow, deep stretches held for 3–5 minutes each. Targets connective tissue and promotes deep relaxation.</p>
+          <div class="class-details">
+            <span><i class="fas fa-clock"></i> 75 min</span>
+            <span><i class="fas fa-dollar-sign"></i> $50</span>
+            <span><i class="fas fa-user"></i> Sofia Marin</span>
+          </div>
+          <div class="class-footer">
+            <div class="spots"><i class="fas fa-circle-dot"></i> 6 spots left</div>
+            <a href="schedule.html" class="btn-sm">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- No results message -->
+    <p class="no-results" id="noResults" style="display:none;">No classes found for this level.</p>
+  </section>
+
+  <!-- PRICING PACKAGES -->
+  <section class="pricing-section section-pad">
+    <div class="section-header">
+      <p class="section-tag">Save More</p>
+      <h2>Class Packages</h2>
+    </div>
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <div class="pricing-header">
+          <h3>Drop-In</h3>
+          <div class="pricing-price"><span class="price-amount">$45</span><span class="price-per">/ class</span></div>
+        </div>
+        <ul class="pricing-features">
+          <li><i class="fas fa-check"></i> Single class access</li>
+          <li><i class="fas fa-check"></i> Board & gear included</li>
+          <li><i class="fas fa-check"></i> All skill levels</li>
+          <li class="muted"><i class="fas fa-times"></i> No rollover</li>
+          <li class="muted"><i class="fas fa-times"></i> No priority booking</li>
+        </ul>
+        <a href="schedule.html" class="btn-outline">Get Started</a>
+      </div>
+
+      <div class="pricing-card featured">
+        <div class="pricing-badge">Most Popular</div>
+        <div class="pricing-header">
+          <h3>Monthly Pass</h3>
+          <div class="pricing-price"><span class="price-amount">$149</span><span class="price-per">/ month</span></div>
+        </div>
+        <ul class="pricing-features">
+          <li><i class="fas fa-check"></i> 8 classes per month</li>
+          <li><i class="fas fa-check"></i> Board & gear included</li>
+          <li><i class="fas fa-check"></i> All skill levels</li>
+          <li><i class="fas fa-check"></i> 1 rollover class</li>
+          <li><i class="fas fa-check"></i> Priority booking</li>
+        </ul>
+        <a href="schedule.html" class="btn-primary">Get Started</a>
+      </div>
+
+      <div class="pricing-card">
+        <div class="pricing-header">
+          <h3>5-Class Pack</h3>
+          <div class="pricing-price"><span class="price-amount">$199</span><span class="price-per">/ pack</span></div>
+        </div>
+        <ul class="pricing-features">
+          <li><i class="fas fa-check"></i> 5 class credits</li>
+          <li><i class="fas fa-check"></i> Board & gear included</li>
+          <li><i class="fas fa-check"></i> All skill levels</li>
+          <li><i class="fas fa-check"></i> 60-day validity</li>
+          <li class="muted"><i class="fas fa-times"></i> No priority booking</li>
+        </ul>
+        <a href="schedule.html" class="btn-outline">Get Started</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT TO BRING -->
+  <section class="bring-section section-pad bg-light">
+    <div class="bring-inner">
+      <div class="bring-text">
+        <p class="section-tag">Be Prepared</p>
+        <h2>What to Bring</h2>
+        <p>We provide all the essential gear — just bring yourself and these few items for the best experience.</p>
+        <div class="bring-grid">
+          <div class="bring-item"><i class="fas fa-tshirt"></i><span>Swimwear or quick-dry clothes</span></div>
+          <div class="bring-item"><i class="fas fa-sun"></i><span>Sunscreen (reef-safe)</span></div>
+          <div class="bring-item"><i class="fas fa-bottle-water"></i><span>Water bottle</span></div>
+          <div class="bring-item"><i class="fas fa-glasses"></i><span>Sunglasses with strap</span></div>
+          <div class="bring-item"><i class="fas fa-hat-cowboy"></i><span>Hat or cap</span></div>
+          <div class="bring-item"><i class="fas fa-ban"></i><span>No jewelry or loose items</span></div>
+        </div>
+      </div>
+      <div class="bring-img">
+        <img src="../images/img-11.jpg" alt="Ready to paddle" />
+      </div>
+    </div>
+  </section>
+
+  <!-- LIVE CLASS TICKER -->
+  <div class="live-ticker">
+    <div class="ticker-label"><i class="fas fa-circle"></i> LIVE TODAY</div>
+    <div class="ticker-track">
+      <div class="ticker-inner" id="tickerInner">
+        <span>🌊 SUP Yoga Flow — 7:00 AM — Maya Rivers — 4 spots left</span>
+        <span>💪 SUP Core Fitness — 9:00 AM — Kai Nakamura — 6 spots left</span>
+        <span>🧘 Morning Mindfulness — 6:30 AM — Sofia Marin — 8 spots left</span>
+        <span>🌅 Sunset Meditation — 6:00 PM — Sofia Marin — 3 spots left</span>
+        <span>🏄 Intro to SUP — 10:00 AM — Maya Rivers — 7 spots left</span>
+        <span>👨‍👩‍👧 Family SUP Fun — 11:00 AM — Kai Nakamura — FULL</span>
+        <span>🌊 SUP Yoga Flow — 7:00 AM — Maya Rivers — 4 spots left</span>
+        <span>💪 SUP Core Fitness — 9:00 AM — Kai Nakamura — 6 spots left</span>
+        <span>🧘 Morning Mindfulness — 6:30 AM — Sofia Marin — 8 spots left</span>
+        <span>🌅 Sunset Meditation — 6:00 PM — Sofia Marin — 3 spots left</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SKILL LEVEL PATH -->
+  <section class="skill-path-section section-pad">
+    <div class="section-header">
+      <p class="section-tag">Your Journey</p>
+      <h2>Find Your Level</h2>
+    </div>
+    <div class="skill-path">
+      <div class="skill-node" data-level="1">
+        <div class="skill-circle"><i class="fas fa-seedling"></i></div>
+        <div class="skill-line"></div>
+        <div class="skill-info">
+          <span class="skill-badge beginner">Beginner</span>
+          <h3>Start Here</h3>
+          <p>No experience needed. Learn to stand, paddle, and breathe on the water.</p>
+          <ul>
+            <li>Intro to SUP</li>
+            
+          </ul>
+        </div>
+      </div>
+      <div class="skill-node" data-level="2">
+        <div class="skill-circle"><i class="fas fa-fire"></i></div>
+        <div class="skill-line"></div>
+        <div class="skill-info">
+          <span class="skill-badge intermediate">Intermediate</span>
+          <h3>Level Up</h3>
+          <p>Build strength and confidence with more dynamic flows and fitness.</p>
+          <ul>
+            <li>SUP Core Fitness</li>
+            
+          </ul>
+        </div>
+      </div>
+      <div class="skill-node" data-level="3">
+        <div class="skill-circle"><i class="fas fa-crown"></i></div>
+        <div class="skill-line"></div>
+        <div class="skill-info">
+          <span class="skill-badge advanced">Advanced</span>
+          <h3>Master It</h3>
+          <p>Push your limits with inversions, deep meditation, and advanced.</p>
+          <ul>
+            <li>Advanced Balance Flow</li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="skill-node" data-level="4">
+        <div class="skill-circle"><i class="fas fa-star"></i></div>
+        <div class="skill-line last"></div>
+        <div class="skill-info">
+          <span class="skill-badge family">Family</span>
+          <h3>Bring Everyone</h3>
+          <p>Fun for all ages. Paddle together, laugh together, grow together.</p>
+          <ul>
+            <li>Family SUP Fun</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARALLAX QUOTE BANNER -->
+  <section class="parallax-quote">
+    <div class="parallax-overlay"></div>
+    <div class="parallax-content">
+      <i class="fas fa-quote-left parallax-icon"></i>
+      <blockquote>The water is your mat.<br/>The sky is your ceiling.<br/>The ocean is your teacher.</blockquote>
+      <cite>— AquaZen Philosophy</cite>
+    </div>
+  </section>
+
+  <!-- INSTRUCTOR SPOTLIGHT -->
+  <section class="spotlight-section section-pad bg-light">
+    <div class="section-header">
+      <p class="section-tag">Learn From the Best</p>
+      <h2>Instructor Spotlight</h2>
+    </div>
+    <div class="spotlight-tabs">
+      <button class="stab active" data-tab="maya">Maya Rivers</button>
+      <button class="stab" data-tab="kai">Kai Nakamura</button>
+      <button class="stab" data-tab="sofia">Sofia Marin</button>
+    </div>
+    <div class="spotlight-panels">
+      <div class="spotlight-panel active" id="tab-maya">
+        <div class="spotlight-img"><img src="../images/img-12.jpg" alt="Maya Rivers" /></div>
+        <div class="spotlight-info">
+          <h3>Maya Rivers</h3>
+          <span class="spotlight-cert">RYT-500 | SUP Specialist | 8 Years Experience</span>
+          <p>Maya discovered SUP yoga on a solo trip to Bali and never looked back. She blends traditional Hatha yoga with the unpredictability of open water to create transformative experiences for her students.</p>
+          <div class="spotlight-stats">
+            <div><strong>1,200+</strong><span>Students Taught</span></div>
+            <div><strong>8 yrs</strong><span>Experience</span></div>
+            <div><strong>RYT-500</strong><span>Certified</span></div>
+          </div>
+          <div class="spotlight-classes">
+            <p><strong>Teaches:</strong></p>
+            <span class="class-level beginner" style="position:static;">SUP Yoga Flow</span>
+            <span class="class-level advanced" style="position:static;">Advanced Balance Flow</span>
+            <span class="class-level beginner" style="position:static;">Intro to SUP</span>
+          </div>
+        </div>
+      </div>
+      <div class="spotlight-panel" id="tab-kai">
+        <div class="spotlight-img"><img src="../images/img-13.jpg" alt="Kai Nakamura" /></div>
+        <div class="spotlight-info">
+          <h3>Kai Nakamura</h3>
+          <span class="spotlight-cert">RYT-200 | Fitness Coach | 5 Years Experience</span>
+          <p>Kai is a former competitive paddler turned fitness coach. His high-energy classes combine athletic training with mindful movement, pushing students to discover strength they never knew they had.</p>
+          <div class="spotlight-stats">
+            <div><strong>800+</strong><span>Students Taught</span></div>
+            <div><strong>5 yrs</strong><span>Experience</span></div>
+            <div><strong>RYT-200</strong><span>Certified</span></div>
+          </div>
+          <div class="spotlight-classes">
+            <p><strong>Teaches:</strong></p>
+            <span class="class-level intermediate" style="position:static;">SUP Core Fitness</span>
+            <span class="class-level intermediate" style="position:static;">Power Paddle HIIT</span>
+            <span class="class-level family" style="position:static;">Family SUP Fun</span>
+          </div>
+        </div>
+      </div>
+      <div class="spotlight-panel" id="tab-sofia">
+        <div class="spotlight-img"><img src="../images/img-14.jpg" alt="Sofia Marin" /></div>
+        <div class="spotlight-info">
+          <h3>Sofia Marin</h3>
+          <span class="spotlight-cert">RYT-300 | Meditation Guide | 6 Years Experience</span>
+          <p>Sofia's classes are a sanctuary. A trained meditation guide and restorative yoga teacher, she creates deeply calming experiences that leave students feeling restored, grounded, and at peace.</p>
+          <div class="spotlight-stats">
+            <div><strong>950+</strong><span>Students Taught</span></div>
+            <div><strong>6 yrs</strong><span>Experience</span></div>
+            <div><strong>RYT-300</strong><span>Certified</span></div>
+          </div>
+          <div class="spotlight-classes">
+            <p><strong>Teaches:</strong></p>
+            <span class="class-level advanced" style="position:static;">Sunset Meditation</span>
+            <span class="class-level beginner" style="position:static;">Morning Mindfulness</span>
+            <span class="class-level intermediate" style="position:static;">Yin SUP Yoga</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLASS COMPARISON TABLE -->
+  <section class="comparison-section section-pad">
+    <div class="section-header">
+      <p class="section-tag">Find Your Fit</p>
+      <h2>Compare Classes</h2>
+    </div>
+    <div class="comparison-wrap">
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Class</th>
+            <th>Level</th>
+            <th>Duration</th>
+            <th>Price</th>
+            <th>Core Focus</th>
+            <th>Gear Included</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>SUP Yoga Flow</strong></td>
+            <td><span class="class-level beginner" style="position:static;">Beginner</span></td>
+            <td>60 min</td>
+            <td>$45</td>
+            <td>Flexibility & Balance</td>
+            <td><i class="fas fa-check" style="color:var(--primary);"></i></td>
+            <td><a href="schedule.html" class="btn-sm">Book</a></td>
+          </tr>
+          <tr>
+            <td><strong>Morning Mindfulness</strong></td>
+            <td><span class="class-level beginner" style="position:static;">Beginner</span></td>
+            <td>45 min</td>
+            <td>$35</td>
+            <td>Breathing & Calm</td>
+            <td><i class="fas fa-check" style="color:var(--primary);"></i></td>
+            <td><a href="schedule.html" class="btn-sm">Book</a></td>
+          </tr>
+          <tr>
+            <td><strong>Intro to SUP</strong></td>
+            <td><span class="class-level beginner" style="position:static;">Beginner</span></td>
+            <td>60 min</td>
+            <td>$40</td>
+            <td>Paddling Basics</td>
+            <td><i class="fas fa-check" style="color:var(--primary);"></i></td>
+            <td><a href="schedule.html" class="btn-sm">Book</a></td>
+          </tr>
+          <tr>
+            <td><strong>SUP Core Fitness</strong></td>
+            <td><span class="class-level intermediate" style="position:static;">Intermediate</span></td>
+            <td>75 min</td>
+            <td>$55</td>
+            <td>Core & Endurance</td>
+            <td><i class="fas fa-check" style="color:var(--primary);"></i></td>
+            <td><a href="schedule.html" class="btn-sm">Book</a></td>
+          </tr>
+          <tr>
+            <td><strong>Power Paddle HIIT</strong></td>
+            <td><span class="class-level intermediate" style="position:static;">Intermediate</span></td>
+            <td>60 min</td>
+            <td>$55</td>
+            <td>Full-Body Burn</td>
+            <td><i class="fas fa-check" style="color:var(--primary);"></i></td>
+            <td><a href="schedule.html" class="btn-sm">Book</a></td>
+          </tr>
+          <tr>
+            <td><strong>Yin SUP Yoga</strong></td>
+            <td><span class="class-level intermediate" style="position:static;">Intermediate</span></td>
+            <td>75 min</td>
+            <td>$50</td>
+            <td>Deep Stretch</td>
+            <td><i class="fas fa-check" style="color:var(--primary);"></i></td>
+            <td><a href="schedule.html" class="btn-sm">Book</a></td>
+          </tr>
+          <tr>
+            <td><strong>Sunset Meditation</strong></td>
+            <td><span class="class-level advanced" style="position:static;">Advanced</span></td>
+            <td>90 min</td>
+            <td>$65</td>
+            <td>Meditation & Restore</td>
+            <td><i class="fas fa-check" style="color:var(--primary);"></i></td>
+            <td><a href="schedule.html" class="btn-sm">Book</a></td>
+          </tr>
+          <tr>
+            <td><strong>Advanced Balance Flow</strong></td>
+            <td><span class="class-level advanced" style="position:static;">Advanced</span></td>
+            <td>90 min</td>
+            <td>$70</td>
+            <td>Inversions & Strength</td>
+            <td><i class="fas fa-check" style="color:var(--primary);"></i></td>
+            <td><a href="schedule.html" class="btn-sm">Book</a></td>
+          </tr>
+          <tr>
+            <td><strong>Family SUP Fun</strong></td>
+            <td><span class="class-level family" style="position:static;">Family</span></td>
+            <td>60 min</td>
+            <td>$40</td>
+            <td>Fun & Light Yoga</td>
+            <td><i class="fas fa-check" style="color:var(--primary);"></i></td>
+            <td><a href="schedule.html" class="btn-sm btn-full">Waitlist</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section section-pad bg-light">
+    <div class="section-header">
+      <p class="section-tag">Got Questions?</p>
+      <h2>Frequently Asked</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q">Do I need prior yoga or paddleboarding experience? <i class="fas fa-chevron-down"></i></button>
+        <div class="faq-a"><p>Not at all! Our beginner classes are designed for complete newcomers. We'll teach you everything you need to know before getting on the water.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">What if I fall off the board? <i class="fas fa-chevron-down"></i></button>
+        <div class="faq-a"><p>Falling is part of the fun! All participants wear life vests and we practice in calm, shallow water. Our instructors will show you how to fall safely and get back on.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Is equipment provided? <i class="fas fa-chevron-down"></i></button>
+        <div class="faq-a"><p>Yes! All SUP boards, paddles, life vests, and leashes are included in your class fee. Just bring yourself and the items on our "What to Bring" list.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Can I cancel or reschedule my booking? <i class="fas fa-chevron-down"></i></button>
+        <div class="faq-a"><p>Yes, cancellations made 24+ hours before class receive a full credit. Cancellations within 24 hours are non-refundable but can be rescheduled once.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">What happens if the weather is bad? <i class="fas fa-chevron-down"></i></button>
+        <div class="faq-a"><p>Safety is our priority. If conditions are unsafe, we'll notify you at least 2 hours before class and offer a full reschedule or credit.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="cta-overlay"></div>
+    <div class="cta-content">
+      <p class="section-tag light">Ready to Begin?</p>
+      <h2>Book Your First Class Today</h2>
+      <p>Join over 1,200 students who've found their balance on the water. First class? Use code <strong>AQUA10</strong> for 10% off.</p>
+      <div class="hero-btns">
+        <a href="schedule.html" class="btn-primary">View Schedule</a>
+        <a href="contact.html" class="btn-outline hero-outline-btn">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+    <div class="newsletter-content">
+      <h2>Stay in the Flow</h2>
+      <p>Get class updates, retreat deals, and wellness tips delivered to your inbox.</p>
+      <form class="newsletter-form" onsubmit="return false;">
+        <input type="email" placeholder="Enter your email address" />
+        <button type="submit" class="btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html"><img src="../images/logo.png" alt="AquaZen Logo" class="footer-logo" /></a>
+        <p>Connecting mind, body, and water through the art of SUP yoga and fitness.</p>
+        <div class="footer-social">
+          <a href="#" class="ig"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="fb"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="yt"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="tt"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="classes.html">Classes</a>
+        <a href="rental.html">Rentals</a>
+        <a href="retreats.html">Retreats</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="booking.html">Booking</a>
+      </div>
+      <div class="footer-links">
+        <h4>Company</h4>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><i class="fas fa-map-marker-alt"></i> 123 Ocean Drive, Pacific Coast, CA</p>
+        <p><i class="fas fa-phone"></i> +1 (800) SUP-YOGA</p>
+        <p><i class="fas fa-envelope"></i> hello@aquazen.com</p>
+        <p><i class="fas fa-clock"></i> Mon–Sun: 6AM – 8PM</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 AquaZen SUP Yoga & Fitness. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+  <script src="../js/classes.js"></script>
+</body>
+</html>
