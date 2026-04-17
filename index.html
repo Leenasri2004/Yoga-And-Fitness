@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AquaZen | SUP Yoga & Fitness</title>
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <span><i class="fas fa-phone"></i> +1 (800) SUP-YOGA</span>
+    <span><i class="fas fa-envelope"></i> hello@aquazen.com</span>
+    <span><i class="fas fa-map-marker-alt"></i> Pacific Coast, CA</span>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="nav-brand">
+      <a href="index.html"><img src="images/logo.png" alt="logo" class="nav-logo-big" /></a>
+    </div>
+
+    <nav class="nav-links" id="navLinks">
+     <li class="dropdown">
+    <a href="#" class="active">Home ▾</a>
+    <ul class="dropdown-menu">
+        <li><a href="index.html" class="active">Home 1</a></li>
+        <li><a href="home-2.html">Home 2</a></li>
+    </ul>
+</li> 
+      <a href="about.html">About</a>
+      <a href="classes.html">Classes</a>
+      <a href="rental.html">Rentals</a>
+      <a href="retreats.html">Retreats</a>
+      <a href="booking.html">Booking</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="toggle-btn" id="rtlToggle" title="Toggle RTL/LTR"></i> RTL</button>
+      <button class="toggle-btn" id="darkToggle" title="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
+      <a href="login.html" class="btn-login"><i class="fas fa-user"></i> Login</a>
+      <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-tag">Find Your Balance on Water</p>
+      <h1>Stand-Up Paddleboard<br /><span>Yoga & Fitness</span></h1>
+      <p class="hero-sub">Breathe. Balance. Flow. Experience yoga like never before — on the open water.</p>
+      <div class="hero-btns">
+        <a href="classes.html" class="btn-primary">Explore Classes</a>
+        <a href="retreats.html" class="btn-outline hero-outline-btn">Book a Retreat</a>
+      </div>
+    </div>
+    <div class="hero-scroll"><i class="fas fa-chevron-down"></i></div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="stat-item"><h2><span class="counter" data-target="1200" data-suffix="+">0</span></h2><p>Happy Students</p></div>
+    <div class="stat-item"><h2><span class="counter" data-target="15" data-suffix="+">0</span></h2><p>Expert Instructors</p></div>
+    <div class="stat-item"><h2><span class="counter" data-target="50" data-suffix="+">0</span></h2><p>Classes Per Month</p></div>
+    <div class="stat-item"><h2><span class="counter" data-target="8" data-suffix="">0</span></h2><p>Retreat Destinations</p></div>
+  </section>
+
+  <!-- ABOUT SNIPPET -->
+  <section class="about-section section-pad">
+    <div class="about-img">
+      <img src="images/meditation.webp" alt="SUP Yoga" />
+      <div class="about-badge"><i class="fas fa-award"></i><span>10+ Years<br/>Experience</span></div>
+    </div>
+    <div class="about-text">
+      <p class="section-tag">Who We Are</p>
+      <h2>Yoga Meets the Ocean</h2>
+      <p>AquaZen blends traditional yoga with the dynamic challenge of stand-up paddleboarding. Our certified instructors guide you through flows that strengthen your core, calm your mind, and connect you with nature.</p>
+      <ul class="check-list">
+        <li><i class="fas fa-check-circle"></i> All skill levels welcome</li>
+        <li><i class="fas fa-check-circle"></i> Premium boards & gear provided</li>
+        <li><i class="fas fa-check-circle"></i> Small group sessions (max 10)</li>
+        <li><i class="fas fa-check-circle"></i> Certified RYT-200 instructors</li>
+      </ul>
+      <a href="about.html" class="btn-primary">Learn More</a>
+    </div>
+  </section>
+
+  <!-- CLASSES -->
+  <section class="classes-section section-pad bg-light">
+    <div class="section-header">
+      <p class="section-tag">What We Offer</p>
+      <h2>Popular Classes</h2>
+    </div>
+    <div class="cards-grid">
+      <div class="card">
+        <img src="images/yoga.avif" alt="SUP Yoga" />
+        <div class="card-body">
+          <span class="card-tag">Beginner</span>
+          <h3>SUP Yoga Flow</h3>
+          <p>Gentle vinyasa sequences on calm water. Perfect for first-timers.</p>
+          <div class="card-meta"><span><i class="fas fa-clock"></i> 60 min</span><span><i class="fas fa-dollar-sign"></i> $45</span></div>
+          <a href="classes.html" class="btn-sm">Book Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/grp.jpg" alt="SUP Fitness" />
+        <div class="card-body">
+          <span class="card-tag intermediate">Intermediate</span>
+          <h3>SUP Core Fitness</h3>
+          <p>High-intensity board workout targeting core strength and balance.</p>
+          <div class="card-meta"><span><i class="fas fa-clock"></i> 75 min</span><span><i class="fas fa-dollar-sign"></i> $55</span></div>
+          <a href="classes.html" class="btn-sm">Book Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/sunset.avif" alt="Sunset SUP" />
+        <div class="card-body">
+          <span class="card-tag advanced">Advanced</span>
+          <h3>Sunset Meditation</h3>
+          <p>Guided meditation and restorative yoga as the sun sets over the water.</p>
+          <div class="card-meta"><span><i class="fas fa-clock"></i> 90 min</span><span><i class="fas fa-dollar-sign"></i> $65</span></div>
+          <a href="classes.html" class="btn-sm">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="center-btn"><a href="classes.html" class="btn-outline">View All Classes</a></div>
+  </section>
+
+  <!-- RENTALS -->
+  <section class="rentals-section section-pad">
+    <div class="section-header">
+      <p class="section-tag">Gear Up</p>
+      <h2>Board Rentals</h2>
+    </div>
+    <div class="rentals-grid">
+      <div class="rental-card">
+        <img src="images/Board.jpg" alt="Yoga Board" />
+        <h3>Yoga SUP Board</h3>
+        <p>Wide, stable board ideal for yoga poses and meditation.</p>
+        <span class="price">$35 / hr</span>
+        <a href="rentals.html" class="btn-sm">Rent Now</a>
+      </div>
+      <div class="rental-card">
+        <img src="images/two.webp" alt="Fitness Board" />
+        <h3>Fitness SUP Board</h3>
+        <p>Rigid performance board for fitness and paddling workouts.</p>
+        <span class="price">$40 / hr</span>
+        <a href="rentals.html" class="btn-sm">Rent Now</a>
+      </div>
+      <div class="rental-card">
+        <img src="images/red.webp" alt="Inflatable Board" />
+        <h3>Inflatable SUP</h3>
+        <p>Portable and beginner-friendly. Great for calm water sessions.</p>
+        <span class="price">$25 / hr</span>
+        <a href="rentals.html" class="btn-sm">Rent Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WATCH US IN ACTION -->
+  <section class="watch-section section-pad">
+    <div class="watch-inner">
+      <div class="watch-text">
+        <p class="section-tag">See It Live</p>
+        <h2>Watch Us in Action</h2>
+        <p>Experience the magic of SUP yoga before you even step on a board. Watch our certified instructors guide students through breathtaking flows on the open water.</p>
+        <ul class="check-list">
+          <li><i class="fas fa-check-circle"></i> Real classes, real students</li>
+          <li><i class="fas fa-check-circle"></i> All skill levels shown</li>
+          <li><i class="fas fa-check-circle"></i> Filmed on location — Pacific Coast</li>
+        </ul>
+        <a href="classes.html" class="btn-primary">Explore Classes</a>
+      </div>
+      <div class="watch-video">
+        <div class="video-wrapper">
+          <img src="images/sunset.avif" alt="Watch AquaZen SUP Yoga" class="video-poster" id="videoPoster" />
+          <div class="video-play-btn" id="videoPlayBtn">
+            <i class="fas fa-play"></i>
+          </div>
+          <iframe
+            id="watchIframe"
+            src=""
+            data-src="https://www.youtube.com/embed/21Zgawj3iGw?rel=0&modestbranding=1&autoplay=1"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            title="AquaZen SUP Yoga Video"
+            style="display:none;">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RETREATS BANNER -->
+  <section class="retreat-banner">
+    <div class="retreat-overlay"></div>
+    <div class="retreat-content">
+      <p class="section-tag light">Escape & Restore</p>
+      <h2>Weekend Retreats</h2>
+      <p>Immersive 2–5 day SUP yoga retreats in breathtaking coastal destinations. All-inclusive packages available.</p>
+      <a href="retreats.html" class="btn-primary">Explore Retreats</a>
+    </div>
+  </section>
+
+  <!-- INSTRUCTORS -->
+  <section class="instructors-section section-pad bg-light">
+    <div class="section-header">
+      <p class="section-tag">Meet the Team</p>
+      <h2>Our Instructors</h2>
+    </div>
+    <div class="instructors-grid">
+      <div class="instructor-card">
+        <img src="images/girls.jpg" alt="Instructor" />
+        <h3>Maya Rivers</h3>
+        <p>RYT-500 | SUP Specialist</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+      <div class="instructor-card">
+        <img src="images/grp-2.jpg" alt="Instructor" />
+        <h3>Kai Nakamura</h3>
+        <p>RYT-200 | Fitness Coach</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+      <div class="instructor-card">
+        <img src="images/grp-3.jpg" alt="Instructor" />
+        <h3>Sofia Marin</h3>
+        <p>RYT-300 | Meditation Guide</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="center-btn"><a href="instructors.html" class="btn-outline">All Instructors</a></div>
+  </section>
+
+  <!-- GALLERY PREVIEW -->
+  <section class="gallery-section section-pad">
+    <div class="section-header">
+      <p class="section-tag">On the Water</p>
+      <h2>Gallery</h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item tall"><img src="images/sky.jpg" alt="" /></div>
+      <div class="gallery-item"><img src="images/jump.jpg" alt="" /></div>
+      <div class="gallery-item"><img src="images/sea.webp" alt="" /></div>
+      <div class="gallery-item wide"><img src="images/group.avif" alt="" /></div>
+      <div class="gallery-item"><img src="images/down.jpg" alt="" /></div>
+      <div class="gallery-item"><img src="images/four.jpg" alt="" /></div>
+      <div class="gallery-item"><img src="images/yogaaa.jpg" alt="" /></div>
+    </div>
+    <div class="center-btn"><a href="gallery.html" class="btn-outline">View Full Gallery</a></div>
+  </section>
+
+  <!-- SCHEDULE PREVIEW -->
+  <section class="schedule-section section-pad bg-light">
+    <div class="section-header">
+      <p class="section-tag">Plan Your Week</p>
+      <h2>Weekly Schedule</h2>
+    </div>
+    <div class="schedule-table-wrap">
+      <table class="schedule-table">
+        <thead>
+          <tr><th>Day</th><th>Class</th><th>Time</th><th>Instructor</th><th>Spots</th><th></th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Monday</td><td>SUP Yoga Flow</td><td>7:00 AM</td><td>Maya Rivers</td><td>4 left</td><td><a href="schedule.html" class="btn-sm">Book</a></td></tr>
+          <tr><td>Wednesday</td><td>SUP Core Fitness</td><td>6:30 AM</td><td>Kai Nakamura</td><td>6 left</td><td><a href="schedule.html" class="btn-sm">Book</a></td></tr>
+          <tr><td>Friday</td><td>Sunset Meditation</td><td>6:00 PM</td><td>Sofia Marin</td><td>3 left</td><td><a href="schedule.html" class="btn-sm">Book</a></td></tr>
+          <tr><td>Saturday</td><td>SUP Yoga Flow</td><td>8:00 AM</td><td>Maya Rivers</td><td>8 left</td><td><a href="schedule.html" class="btn-sm">Book</a></td></tr>
+          <tr><td>Sunday</td><td>Family SUP Fun</td><td>10:00 AM</td><td>Kai Nakamura</td><td><span class="badge-full">Full</span></td><td><a href="schedule.html" class="btn-sm btn-full">Waitlist</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="center-btn"><a href="schedule.html" class="btn-outline">Full Schedule</a></div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials section-pad">
+    <div class="section-header">
+      <p class="section-tag">What They Say</p>
+      <h2>Student Reviews</h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>"Absolutely life-changing experience. The combination of yoga and paddleboarding is unlike anything else!"</p>
+        <div class="reviewer"><img src="images/yogaaa.jpg" alt="" /><span><strong>Sarah K.</strong> — Los Angeles</span></div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>"Maya is an incredible instructor. I came as a complete beginner and left feeling confident and zen."</p>
+        <div class="reviewer"><img src="images/white.jpg" alt="" /><span><strong>James T.</strong> — San Diego</span></div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★☆</div>
+        <p>"The sunset retreat was the highlight of my year. Stunning views, amazing instructors, perfect vibes."</p>
+        <div class="reviewer"><img src="images/Sunset-Small.jpg" alt="" /><span><strong>Priya M.</strong> — San Francisco</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+    <div class="newsletter-content">
+      <h2>Stay in the Flow</h2>
+      <p>Get class updates, retreat deals, and wellness tips delivered to your inbox.</p>
+      <form class="newsletter-form" onsubmit="return false;">
+        <input type="email" placeholder="Enter your email address" />
+        <button type="submit" class="btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html"><img src="images/logo.png" alt="AquaZen Logo" class="footer-logo" /></a>
+        <p>Connecting mind, body, and water through the art of SUP yoga and fitness.</p>
+        <div class="footer-social">
+          <a href="#" class="ig"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="fb"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="yt"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="tt"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="classes.html">Classes</a>
+        <a href="rental.html">Rentals</a>
+        <a href="retreats.html">Retreats</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="booking.html">Booking</a>
+      </div>
+      <div class="footer-links">
+        <h4>Company</h4>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><i class="fas fa-map-marker-alt"></i> 123 Ocean Drive, Pacific Coast, CA</p>
+        <p><i class="fas fa-phone"></i> +1 (800) SUP-YOGA</p>
+        <p><i class="fas fa-envelope"></i> hello@aquazen.com</p>
+        <p><i class="fas fa-clock"></i> Mon–Sun: 6AM – 8PM</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 AquaZen SUP Yoga & Fitness. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
