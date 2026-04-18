@@ -5,13 +5,12 @@ body { overflow-x: hidden; }
 /* NAV ITEM */
 .dropdown > a {
     text-decoration: none;
-    color: white;
+    color: black;
     padding: 10px 15px;
     display: block;
     font-weight: 500;
     transition: 0.3s;
 }
-
 .dropdown > a:hover {
     color: rgba(31,122,110,0.9);
 }
