@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Retreats | AquaZen SUP Yoga & Fitness</title>
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/retreats.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="topbar">
+    <span><i class="fas fa-phone"></i> +1 (800) SUP-YOGA</span>
+    <span><i class="fas fa-envelope"></i> hello@aquazen.com</span>
+    <span><i class="fas fa-map-marker-alt"></i> Pacific Coast, CA</span>
+  </div>
+
+  <header class="navbar" id="navbar">
+    <div class="nav-brand">
+      <a href="index.html"><img src="images/logo.png" alt="logo" class="nav-logo-big" /></a>
+    </div>
+
+    <nav class="nav-links" id="navLinks">
+     <li class="dropdown">
+    <a href="#">Home ▾</a>
+    <ul class="dropdown-menu">
+        <li><a href="index.html">Home 1</a></li>
+        <li><a href="home-2.html">Home 2</a></li>
+    </ul>
+</li> <a href="about.html">About</a>
+      <a href="classes.html">Classes</a>
+      <a href="rental.html">Rentals</a>
+      <a href="retreats.html" class="active">Retreats</a>
+      <a href="booking.html">Booking</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="toggle-btn" id="rtlToggle" title="Toggle RTL/LTR">RTL</button>
+      <button class="toggle-btn" id="darkToggle" title="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
+      <a href="login.html" class="btn-login"><i class="fas fa-user"></i> Login</a>
+      <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+    </div>
+  </header>
+
+  <!-- ① CINEMATIC HERO -->
+  <section class="rt-hero">
+    <div class="rt-hero-bg"></div>
+    <div class="rt-hero-overlay"></div>
+    <div class="rt-hero-content">
+      <div class="rt-hero-eyebrow">
+        <span class="rt-dot"></span>
+        <span>Escape. Restore. Transform.</span>
+        <span class="rt-dot"></span>
+      </div>
+      <h1>SUP Yoga<br/><span class="rt-outline">Retreats</span></h1>
+      <p>Immersive 2–7 day coastal escapes designed to restore your mind, strengthen your body, and reconnect you with nature.</p>
+      <div class="rt-hero-actions">
+        <a href="#retreats" class="btn-primary">View Retreats</a>
+        <a href="#enquire" class="btn-outline hero-outline-btn">Enquire Now</a>
+      </div>
+      <div class="rt-hero-badges">
+        <div class="rt-badge"><i class="fas fa-map-marker-alt"></i><span>8 Destinations</span></div>
+        <div class="rt-badge"><i class="fas fa-users"></i><span>Max 12 Guests</span></div>
+        <div class="rt-badge"><i class="fas fa-star"></i><span>All-Inclusive</span></div>
+      </div>
+    </div>
+    <div class="rt-hero-scroll"><i class="fas fa-chevron-down"></i></div>
+    <div class="rt-hero-ripple"><span></span><span></span><span></span></div>
+  </section>
+
+  <!-- ② MARQUEE DESTINATIONS STRIP -->
+  <div class="rt-marquee-wrap">
+    <div class="rt-marquee">
+      <span><i class="fas fa-map-marker-alt"></i> Malibu, CA</span>
+      <span><i class="fas fa-map-marker-alt"></i> Bali, Indonesia</span>
+      <span><i class="fas fa-map-marker-alt"></i> Tulum, Mexico</span>
+      <span><i class="fas fa-map-marker-alt"></i> Santorini, Greece</span>
+      <span><i class="fas fa-map-marker-alt"></i> Byron Bay, Australia</span>
+      <span><i class="fas fa-map-marker-alt"></i> Costa Rica</span>
+      <span><i class="fas fa-map-marker-alt"></i> Amalfi Coast, Italy</span>
+      <span><i class="fas fa-map-marker-alt"></i> Kauai, Hawaii</span>
+      <span><i class="fas fa-map-marker-alt"></i> Malibu, CA</span>
+      <span><i class="fas fa-map-marker-alt"></i> Bali, Indonesia</span>
+      <span><i class="fas fa-map-marker-alt"></i> Tulum, Mexico</span>
+      <span><i class="fas fa-map-marker-alt"></i> Santorini, Greece</span>
+      <span><i class="fas fa-map-marker-alt"></i> Byron Bay, Australia</span>
+      <span><i class="fas fa-map-marker-alt"></i> Costa Rica</span>
+      <span><i class="fas fa-map-marker-alt"></i> Amalfi Coast, Italy</span>
+      <span><i class="fas fa-map-marker-alt"></i> Kauai, Hawaii</span>
+    </div>
+  </div>
+
+  <!-- ③ RETREAT SHOWCASE — full-width immersive horizontal panels -->
+  <section class="rt-retreats section-pad" id="retreats">
+    <div class="rt-retreats-header">
+      <div>
+        <p class="section-tag">Choose Your Escape</p>
+        <h2>Upcoming Retreats</h2>
+      </div>
+    </div>
+
+    <!-- FEATURED LARGE CARD -->
+    <div class="rt-featured-card rt-reveal">
+      <div class="rt-fc-img">
+        <img src="images/sea.webp" alt="Bali Soul Retreat" />
+        <div class="rt-fc-water"></div>
+      </div>
+      <div class="rt-fc-content">
+        <div class="rt-fc-tag">⭐ Most Popular</div>
+        <div class="rt-fc-dest"><i class="fas fa-map-marker-alt"></i> Bali, Indonesia</div>
+        <h3>Bali Soul Retreat</h3>
+        <p>5 days of deep immersion — morning SUP flows on sacred waters, afternoon healing workshops, and traditional Balinese rituals under the stars.</p>
+        <div class="rt-fc-pills">
+          <span>5 Days</span><span>Jul 7–11</span><span>Villa Stay</span><span>All Meals</span><span>Transfers</span>
+        </div>
+        <div class="rt-fc-bottom">
+          <div class="rt-fc-price"><small>from</small><strong>$1,899</strong><small>/ person</small></div>
+          <a href="#enquire" class="btn-primary">Book This Retreat</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SMALL CARDS ROW -->
+    <div class="rt-small-grid">
+
+      <div class="rt-sm-card rt-reveal">
+        <div class="rt-sm-img"><img src="images/sunset.avif" alt="Weekend Warrior" /><span class="rt-sm-days">2 Days</span></div>
+        <div class="rt-sm-body">
+          <div class="rt-sm-loc"><i class="fas fa-map-marker-alt"></i> Malibu, CA <span>Jun 14–15</span></div>
+          <h4>Weekend Warrior</h4>
+          <p>Sunrise SUP yoga, HIIT sessions & sunset meditation on the Pacific coast.</p>
+          <div class="rt-sm-footer"><strong>$499</strong><a href="#enquire" class="btn-sm">Enquire</a></div>
+        </div>
+      </div>
+
+      <div class="rt-sm-card rt-reveal">
+        <div class="rt-sm-img"><img src="images/sky.jpg" alt="Tulum Escape" /><span class="rt-sm-days">4 Days</span></div>
+        <div class="rt-sm-body">
+          <div class="rt-sm-loc"><i class="fas fa-map-marker-alt"></i> Tulum, Mexico <span>Aug 3–6</span></div>
+          <h4>Tulum Escape</h4>
+          <p>Cenote swims, jungle yoga & Caribbean SUP in the world's most magical destination.</p>
+          <div class="rt-sm-footer"><strong>$1,299</strong><a href="#enquire" class="btn-sm">Enquire</a></div>
+        </div>
+      </div>
+
+      <div class="rt-sm-card rt-reveal">
+        <div class="rt-sm-img"><img src="images/meditation.webp" alt="Hawaii Renewal" /><span class="rt-sm-days">7 Days</span></div>
+        <div class="rt-sm-body">
+          <div class="rt-sm-loc"><i class="fas fa-map-marker-alt"></i> Kauai, Hawaii <span>Sep 12–18</span></div>
+          <h4>Hawaii Renewal</h4>
+          <p>Daily SUP yoga, waterfall hikes, breathwork & island feasts for a full week.</p>
+          <div class="rt-sm-footer"><strong>$2,799</strong><a href="#enquire" class="btn-sm">Enquire</a></div>
+        </div>
+      </div>
+
+      <div class="rt-sm-card rt-reveal">
+        <div class="rt-sm-img"><img src="images/grp.jpg" alt="Costa Rica Wild" /><span class="rt-sm-days">5 Days</span></div>
+        <div class="rt-sm-body">
+          <div class="rt-sm-loc"><i class="fas fa-map-marker-alt"></i> Costa Rica <span>Oct 5–9</span></div>
+          <h4>Costa Rica Wild</h4>
+          <p>Rainforest mornings, Pacific SUP & wildlife encounters in nature's paradise.</p>
+          <div class="rt-sm-footer"><strong>$1,599</strong><a href="#enquire" class="btn-sm">Enquire</a></div>
+        </div>
+      </div>
+
+      <div class="rt-sm-card rt-reveal">
+        <div class="rt-sm-img"><img src="images/yoga.avif" alt="Santorini Serenity" /><span class="rt-sm-days">6 Days</span></div>
+        <div class="rt-sm-body">
+          <div class="rt-sm-loc"><i class="fas fa-map-marker-alt"></i> Santorini, Greece <span>Nov 1–6</span></div>
+          <h4>Santorini Serenity</h4>
+          <p>Caldera views, Aegean SUP flows & cliffside villa luxury on the most romantic island.</p>
+          <div class="rt-sm-footer"><strong>$2,499</strong><a href="#enquire" class="btn-sm">Enquire</a></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ④ WHAT'S INCLUDED — horizontal icon strip -->
+  <section class="rt-included">
+    <div class="rt-included-overlay"></div>
+    <div class="rt-included-inner">
+      <div class="section-header">
+        <p class="section-tag light">Everything Covered</p>
+        <h2 style="color:#fff;">What's Included</h2>
+      </div>
+      <div class="rt-included-grid">
+        <div class="rt-inc-item rt-reveal"><i class="fas fa-bed"></i><h3>Accommodation</h3><p>Handpicked boutique stays from eco-lodges to cliffside villas.</p></div>
+        <div class="rt-inc-item rt-reveal"><i class="fas fa-utensils"></i><h3>All Meals</h3><p>Nourishing plant-forward cuisine prepared by local chefs.</p></div>
+        <div class="rt-inc-item rt-reveal"><i class="fas fa-water"></i><h3>Daily SUP Yoga</h3><p>2 guided sessions per day led by RYT-500 certified instructors.</p></div>
+        <div class="rt-inc-item rt-reveal"><i class="fas fa-person-swimming"></i><h3>All Equipment</h3><p>Premium boards, paddles, life vests and leashes provided.</p></div>
+        <div class="rt-inc-item rt-reveal"><i class="fas fa-spa"></i><h3>Wellness Sessions</h3><p>Breathwork, sound healing, and restorative yoga workshops.</p></div>
+        <div class="rt-inc-item rt-reveal"><i class="fas fa-van-shuttle"></i><h3>Transfers</h3><p>Airport pickups and all local transport arranged for you.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ⑤ DAY-BY-DAY ITINERARY ACCORDION -->
+  <section class="rt-itinerary section-pad bg-light">
+    <div class="section-header">
+      <p class="section-tag">Sample Schedule</p>
+      <h2>A Day in the Retreat</h2>
+    </div>
+    <div class="rt-timeline">
+      <div class="rt-tl-item rt-reveal">
+        <div class="rt-tl-time">6:00 AM</div>
+        <div class="rt-tl-dot"></div>
+        <div class="rt-tl-content">
+          <h3><i class="fas fa-sun"></i> Sunrise Meditation</h3>
+          <p>Begin the day with a guided breathwork,mindfulness session on the beach,the sun rises water.</p>
+        </div>
+      </div>
+      <div class="rt-tl-item rt-reveal">
+        <div class="rt-tl-time">7:30 AM</div>
+        <div class="rt-tl-dot"></div>
+        <div class="rt-tl-content">
+          <h3><i class="fas fa-water"></i> Morning SUP Yoga</h3>
+          <p>90-minute vinyasa flow on the water. All levels welcome — boards and gear provided beach.</p>
+        </div>
+      </div>
+      <div class="rt-tl-item rt-reveal">
+        <div class="rt-tl-time">9:30 AM</div>
+        <div class="rt-tl-dot"></div>
+        <div class="rt-tl-content">
+          <h3><i class="fas fa-utensils"></i> Nourishing Breakfast</h3>
+          <p>Farm-to-table breakfast with fresh tropical fruits, smoothie bowls, and herbal teas.</p>
+        </div>
+      </div>
+      <div class="rt-tl-item rt-reveal">
+        <div class="rt-tl-time">11:00 AM</div>
+        <div class="rt-tl-dot"></div>
+        <div class="rt-tl-content">
+          <h3><i class="fas fa-book-open"></i> Workshop</h3>
+          <p>Daily themed workshop — yoga philosophy, ocean ecology, nutrition, or sound healing.</p>
+        </div>
+      </div>
+      <div class="rt-tl-item rt-reveal">
+        <div class="rt-tl-time">1:00 PM</div>
+        <div class="rt-tl-dot"></div>
+        <div class="rt-tl-content">
+          <h3><i class="fas fa-leaf"></i> Lunch & Free Time</h3>
+          <p>Enjoy a wholesome lunch then relax, explore, swim, or book an optional massage.</p>
+        </div>
+      </div>
+      <div class="rt-tl-item rt-reveal">
+        <div class="rt-tl-time">4:00 PM</div>
+        <div class="rt-tl-dot"></div>
+        <div class="rt-tl-content">
+          <h3><i class="fas fa-dumbbell"></i> Afternoon Activity</h3>
+          <p>Guided coastal hike, snorkelling, paddling excursion, or cultural experience.</p>
+        </div>
+      </div>
+      <div class="rt-tl-item rt-reveal">
+        <div class="rt-tl-time">6:30 PM</div>
+        <div class="rt-tl-dot"></div>
+        <div class="rt-tl-content">
+          <h3><i class="fas fa-moon"></i> Sunset Yin & Dinner</h3>
+          <p>Restorative yin yoga as the sun sets, followed by a communal dinner under the stars.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ⑥ SPLIT TESTIMONIAL -->
+  <section class="rt-testimonial-split">
+    <div class="rt-ts-img rt-reveal-left">
+      <img src="images/grp-2.jpg" alt="Retreat experience" />
+      <div class="rt-ts-float">
+        <div class="stars">★★★★★</div>
+        <p>"Life-changing"</p>
+      </div>
+    </div>
+    <div class="rt-ts-content rt-reveal-right">
+      <p class="section-tag">Real Stories</p>
+      <h2>What Our Guests Say</h2>
+      <div class="rt-quotes">
+        <div class="rt-quote active" id="q0">
+          <p>"The Bali retreat completely transformed my relationship with yoga and the ocean. I came home a different person — calmer, stronger, and more connected to myself."</p>
+          <div class="rt-quote-author"><img src="images/yogaaa.jpg" alt="" /><div><strong>Sarah K.</strong><span>Bali Soul Retreat, 2024</span></div></div>
+        </div>
+        <div class="rt-quote" id="q1">
+          <p>"I've done yoga retreats before but nothing compares to doing it on the water. The instructors were world-class and the location was absolutely breathtaking."</p>
+          <div class="rt-quote-author"><img src="images/girls.jpg" alt="" /><div><strong>James T.</strong><span>Hawaii Renewal, 2024</span></div></div>
+        </div>
+        <div class="rt-quote" id="q2">
+          <p>"Santorini was a dream. Waking up to caldera views, paddling in the Aegean, and eating the most incredible food every day. I'm already booked for next year!"</p>
+          <div class="rt-quote-author"><img src="images/four.jpg" alt="" /><div><strong>Priya M.</strong><span>Santorini Serenity, 2024</span></div></div>
+        </div>
+      </div>
+      <div class="rt-quote-dots">
+        <button class="rt-qdot active" data-q="0"></button>
+        <button class="rt-qdot" data-q="1"></button>
+        <button class="rt-qdot" data-q="2"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ⑦ ENQUIRY FORM -->
+  <section class="rt-enquire section-pad" id="enquire">
+    <div class="section-header">
+      <p class="section-tag">Start Your Journey</p>
+      <h2>Enquire About a Retreat</h2>
+    </div>
+    <div class="rt-enquire-inner">
+      <div class="rt-enquire-info rt-reveal-left">
+        <div class="rt-info-card">
+          <i class="fas fa-users"></i>
+          <h3>Small Groups</h3>
+          <p>Maximum 12 guests per retreat for a truly personal experience.</p>
+        </div>
+        <div class="rt-info-card">
+          <i class="fas fa-shield-halved"></i>
+          <h3>Secure Booking</h3>
+          <p>Reserve with a 20% deposit. Full refund up to 30 days before.</p>
+        </div>
+        <div class="rt-info-card">
+          <i class="fas fa-headset"></i>
+          <h3>Dedicated Support</h3>
+          <p>Your personal retreat coordinator is available 7 days a week.</p>
+        </div>
+      </div>
+      <form class="rt-form rt-reveal-right" id="retreatForm">
+        <div class="rt-form-row">
+          <div class="rt-form-group"><label>Full Name</label><input type="text" placeholder="Jane Doe" required /></div>
+          <div class="rt-form-group"><label>Email</label><input type="email" placeholder="you@example.com" required /></div>
+        </div>
+        <div class="rt-form-row">
+          <div class="rt-form-group">
+            <label>Retreat of Interest</label>
+            <select>
+              <option>Weekend Warrior — Malibu</option>
+              <option>Bali Soul Retreat</option>
+              <option>Tulum Escape</option>
+              <option>Hawaii Renewal</option>
+              <option>Costa Rica Wild</option>
+              <option>Santorini Serenity</option>
+            </select>
+          </div>
+          <div class="rt-form-group">
+            <label>Group Size</label>
+            <select>
+              <option>Just Me</option>
+              <option>2 People</option>
+              <option>3–4 People</option>
+              <option>5+ People</option>
+            </select>
+          </div>
+        </div>
+        <div class="rt-form-row">
+          <div class="rt-form-group">
+            <label>Experience Level</label>
+            <select>
+              <option>Complete Beginner</option>
+              <option>Some Experience</option>
+              <option>Intermediate</option>
+              <option>Advanced</option>
+            </select>
+          </div>
+          <div class="rt-form-group"><label>Phone (optional)</label><input type="tel" placeholder="+1 (555) 000-0000" /></div>
+        </div>
+        <div class="rt-form-group"><label>Message</label><textarea rows="3" placeholder="Tell us about yourself, any dietary needs, or questions..."></textarea></div>
+        <button type="submit" class="btn-primary full-width rt-submit">Send Enquiry</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+    <div class="newsletter-content">
+      <h2>Stay in the Flow</h2>
+      <p>Get retreat announcements, early-bird deals, and wellness tips delivered to your inbox.</p>
+      <form class="newsletter-form" onsubmit="return false;">
+        <input type="email" placeholder="Enter your email address" />
+        <button type="submit" class="btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html"><img src="images/logo.png" alt="AquaZen Logo" class="footer-logo" /></a>
+        <p>Connecting mind, body, and water through the art of SUP yoga and fitness.</p>
+        <div class="footer-social">
+          <a href="#" class="ig"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="fb"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="yt"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="tt"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="classes.html">Classes</a>
+        <a href="rental.html">Rentals</a>
+        <a href="retreats.html">Retreats</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="booking.html">Booking</a>
+      </div>
+      <div class="footer-links">
+        <h4>Company</h4>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><i class="fas fa-map-marker-alt"></i> 123 Ocean Drive, Pacific Coast, CA</p>
+        <p><i class="fas fa-phone"></i> +1 (800) SUP-YOGA</p>
+        <p><i class="fas fa-envelope"></i> hello@aquazen.com</p>
+        <p><i class="fas fa-clock"></i> Mon–Sun: 6AM – 8PM</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 AquaZen SUP Yoga & Fitness. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/retreats.js"></script>
+</body>
+</html>
