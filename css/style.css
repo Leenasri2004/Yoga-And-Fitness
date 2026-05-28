@@ -923,23 +923,36 @@ body.mobile-nav-open #scrollTopBtn {
     position: absolute;
     top: 100%; left: 0; right: 0;
     background: var(--white);
-    padding: 20px 5%;
+    padding: 18px 5%;
     box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-    gap: 14px;
+    gap: 4px;
     z-index: 999;
   }
   .nav-links.open { display: flex; }
   .nav-links > a,
   .dropdown > a,
   .dropdown { width: 100%; }
+  .nav-links > a,
+  .dropdown > a {
+    padding: 8px 0;
+    line-height: 1.2;
+  }
+  .nav-links .dropdown > a {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 0.82rem;
+  }
+  .nav-links a::after {
+    display: none;
+  }
   .mobile-menu-actions {
     display: grid;
     grid-template-columns: 42px 42px minmax(0, 1fr);
     width: 100%;
     align-items: center;
     gap: 10px;
-    padding-top: 14px;
-    margin-top: 4px;
+    padding-top: 12px;
+    margin-top: 8px;
     border-top: 1px solid rgba(31,122,110,0.16);
   }
   .mobile-menu-actions > * {
@@ -982,7 +995,6 @@ body.mobile-nav-open #scrollTopBtn {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0;
   }
   .dropdown-menu {
     position: static;
@@ -1004,12 +1016,12 @@ body.mobile-nav-open #scrollTopBtn {
   .dropdown.open .dropdown-menu {
     max-height: 180px;
     padding: 8px 0 0;
-    margin-top: 2px;
+    margin-top: 0;
     opacity: 1;
     visibility: visible;
   }
   .dropdown-menu li a {
-    padding: 8px 0 8px 16px;
+    padding: 7px 0 7px 14px;
   }
   body.dark .nav-links { background: #111; }
   body.dark .dropdown-menu { background: transparent; box-shadow: none; }
@@ -1027,7 +1039,7 @@ body.mobile-nav-open #scrollTopBtn {
 }
 
 @media (max-width: 900px) {
-  .nav-links { gap: 12px; }
+  .nav-links { gap: 4px; }
   .toggle-btn span { display: none; }
 }
 
@@ -1209,6 +1221,15 @@ body.mobile-nav-open #scrollTopBtn {
 }
 
 @media (max-width: 1024px) {
+  .navbar {
+    grid-template-columns: auto 1fr auto;
+  }
+  .nav-brand {
+    justify-self: start;
+  }
+  .nav-actions {
+    justify-self: end;
+  }
   .nav-actions > .toggle-btn,
   .nav-actions > .btn-login {
     display: none;
@@ -1219,6 +1240,47 @@ body.mobile-nav-open #scrollTopBtn {
   .mobile-menu-actions .toggle-btn,
   .mobile-menu-actions .btn-login {
     display: inline-flex;
+  }
+  .nav-links {
+    align-items: stretch;
+  }
+  .nav-links > a,
+  .dropdown > a {
+    display: flex;
+    align-items: center;
+    min-height: 34px;
+    font-size: 0.82rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .mobile-menu-actions {
+    grid-template-columns: 40px 40px minmax(0, 1fr);
+    align-items: center;
+  }
+  .mobile-menu-actions .toggle-btn,
+  .mobile-menu-actions #darkToggle,
+  .mobile-menu-actions .btn-login {
+    height: 38px;
+  }
+  .mobile-menu-actions .btn-login {
+    align-items: center;
+    justify-content: center;
+    line-height: 38px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mobile-menu-actions {
+    grid-template-columns: 36px 36px minmax(0, 1fr);
+    gap: 8px;
+  }
+  .mobile-menu-actions .toggle-btn,
+  .mobile-menu-actions #darkToggle,
+  .mobile-menu-actions .btn-login {
+    height: 36px;
+  }
+  .mobile-menu-actions .btn-login {
+    line-height: 36px;
   }
 }
 
