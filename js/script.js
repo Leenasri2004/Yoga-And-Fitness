@@ -21,21 +21,51 @@ window.addEventListener('scroll', () => {
 // Hamburger menu
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('navLinks');
+const navActions = document.querySelector('.nav-actions');
 const navDropdowns = navLinks ? [...navLinks.querySelectorAll('.dropdown')] : [];
 const mobileNavMedia = window.matchMedia('(max-width: 1024px)');
+const menuActions = document.createElement('div');
+const desktopActionsMarker = document.createComment('desktop nav actions');
+let menuActionsMoved = false;
 
 function closeMobileNav() {
   navLinks?.classList.remove('open');
+  document.body.classList.remove('mobile-nav-open');
   hamburger?.setAttribute('aria-expanded', 'false');
   navDropdowns.forEach(dropdown => dropdown.classList.remove('open'));
 }
 
+function syncMenuActions() {
+  if (!navLinks || !navActions || !hamburger) return;
+
+  const actionItems = [...navActions.children].filter(item => item !== hamburger);
+
+  if (mobileNavMedia.matches) {
+    if (!menuActionsMoved) {
+      menuActions.className = 'mobile-menu-actions';
+      navActions.insertBefore(desktopActionsMarker, hamburger);
+      actionItems.forEach(item => menuActions.appendChild(item));
+      navLinks.appendChild(menuActions);
+      menuActionsMoved = true;
+    }
+  } else if (menuActionsMoved) {
+    [...menuActions.children].forEach(item => navActions.insertBefore(item, desktopActionsMarker));
+    desktopActionsMarker.remove();
+    menuActions.remove();
+    menuActionsMoved = false;
+  }
+
+  syncHeaderOffsets();
+}
+
 hamburger?.setAttribute('aria-controls', 'navLinks');
 hamburger?.setAttribute('aria-expanded', 'false');
+syncMenuActions();
 
 hamburger?.addEventListener('click', () => {
   if (!navLinks) return;
   const isOpen = navLinks.classList.toggle('open');
+  document.body.classList.toggle('mobile-nav-open', isOpen);
   hamburger.setAttribute('aria-expanded', String(isOpen));
   if (!isOpen) {
     navDropdowns.forEach(dropdown => dropdown.classList.remove('open'));
@@ -77,6 +107,7 @@ mobileNavMedia.addEventListener('change', event => {
   if (!event.matches) {
     closeMobileNav();
   }
+  syncMenuActions();
 });
 
 // Dark mode toggle
