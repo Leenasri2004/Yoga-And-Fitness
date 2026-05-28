@@ -589,6 +589,11 @@ body.dark .r-rule { background: #1a1a1a; }
   .r-tl-line { display: none; }
   .r-booking-inner { grid-template-columns: 1fr; gap: 40px; }
   .r-reviews-grid { grid-template-columns: 1fr 1fr; }
+  .r-reviews-grid .r-review-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: calc((100% - 28px) / 2);
+  }
   .r-rules-grid { grid-template-columns: repeat(2,1fr); }
 }
 @media (max-width: 768px) {
@@ -599,6 +604,11 @@ body.dark .r-rule { background: #1a1a1a; }
   .r-exp-right { padding: 40px 24px; }
   .r-form-row { grid-template-columns: 1fr; }
   .r-reviews-grid { grid-template-columns: 1fr; }
+  .r-reviews-grid .r-review-card:last-child:nth-child(odd) {
+    grid-column: auto;
+    justify-self: stretch;
+    width: auto;
+  }
   .r-rules-grid { grid-template-columns: 1fr; }
   .r-form { padding: 24px 18px; }
 }
